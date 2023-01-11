@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose');
+const { Schema } = require('mongoose')
 
 const drinkItemsSchema = new Schema({
     name: {
@@ -18,6 +18,6 @@ const drinkItemsSchema = new Schema({
         required: true,
     },
 
-})
+});
 
 module.exports = drinkItemsSchema;
