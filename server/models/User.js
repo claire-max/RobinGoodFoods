@@ -21,7 +21,7 @@ const userSchema = new Schema(
             required: true,
           },
         
-        foodSaved: [foodItemSchema],       
+        addedItemToCart: [foodsAdded],       
     },
     {
         toJSON: {
