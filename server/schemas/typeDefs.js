@@ -30,12 +30,6 @@ const typeDefs = gql`
     orders: [Order]
   }
 
-  type Feedback {
-    feedbackId: ID!
-    email: String!
-    comment: String!
-  }
-
   type Checkout {
     session: ID
   }
@@ -61,9 +55,6 @@ const typeDefs = gql`
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
   }
-
-
-
 `;
 
 module.exports = typeDefs;
