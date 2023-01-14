@@ -2,10 +2,10 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import React from 'react'
 
-const Homepage = () => {
+const theCarousel = () => {
   return (
     <div>
-        <Navbar/>
+<Navbar/>
     <Carousel>
       <Carousel.Item>
         <img
@@ -49,4 +49,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default theCarousel;
