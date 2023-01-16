@@ -80,7 +80,7 @@ db.once('open', async () => {
   ])
     // Adding products for Drinks
     //Coffee
-    const productsItems = await productsItems.insertMany([
+    const productsItems = await ProductItems.insertMany([
     {   
       name: 'Blonderoast Coffee',
       product: products[7]._id,
