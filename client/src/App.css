@@ -7,6 +7,52 @@
   pointer-events: none;
 }
 
+/* Food icon home */
+
+.menuContainer{
+margin-top: 10%;
+display: flex;
+flex-direction: column;
+
+}
+
+/* Food Section */
+.food{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.sweetmeatText{
+  padding-left: 10%;
+  padding-top: 2%
+}
+
+.sweetmeatImage{
+  width: 30%;
+  height: 30%;
+  border: brown 4px solid;
+}
+
+/* Drink Section */
+.drinks{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.teacoffText{
+  padding-left: 10%;
+  padding-top: 2%
+}
+
+.drinkImage{
+  width: 30%;
+  height: 40%;
+  border: brown 4px solid;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

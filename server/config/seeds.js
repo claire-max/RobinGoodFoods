@@ -1,5 +1,5 @@
 const db = require('./connection');
-const { User, Product, Category } = require('../models');
+const { User, Product, Category, ProductItems } = require('../models');
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -21,26 +21,15 @@ db.once('open', async () => {
         'Bagel.',
       image: 'bagel.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+
     },
-    {croissants,
+    {
       name: 'Croissants',
       description:
         'Croissants.',
       image: 'croissants.jpg',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
-    },
-    {
-      name: 'Coffee',
-      category: categories[0]._id,
-      description:
-        'Coffee.',
-      image: 'coffee.jpg',
-      price: 7.99,
-      quantity: 20
+
     },
     {
       name: 'Jam',
@@ -48,8 +37,7 @@ db.once('open', async () => {
       description:
         'Jam.',
       image: 'jam.jpg',
-      price: 3.99,
-      quantity: 50
+
     },
     {
       name: 'Pancakes',
@@ -57,8 +45,7 @@ db.once('open', async () => {
       description:
         'Pancakes.',
       image: 'pancakes.jpg',
-      price: 14.99,
-      quantity: 100
+
     },
     {
       name: 'Syrup',
@@ -66,17 +53,7 @@ db.once('open', async () => {
       description:
         'Syrup.',
       image: 'syrup.jpg',
-      price: 399.99,
-      quantity: 30
-    },
-    {
-      name: 'Tea',
-      category: categories[0]._id,
-      description:
-        'Tea.',
-      image: 'tea.jpg',
-      price: 199.99,
-      quantity: 30
+
     },
     {
       name: 'Bread',
@@ -84,15 +61,29 @@ db.once('open', async () => {
       description:
         'Bread.',
       image: 'bread.jpg',
-      price: 9.99,
-      quantity: 100
-    },
 
+    },
+    {
+      name: 'Tea',
+      category: categories[1]._id,
+      description:
+        'Tea.',
+      image: 'tea.jpg',
+    },
+    {
+      name: 'Coffee',
+      category: categories[1]._id,
+      description:
+        'Coffee.',
+      image: 'coffee.jpg',
+    }
+  ])
     // Adding products for Drinks
     //Coffee
+    const productsItems = await ProductItems.insertMany([
     {   
       name: 'Blonderoast Coffee',
-      category: categories[1]._id,
+      product: products[7]._id,
       description:
         'Blonde roast coffee that has been roasted for a shorter period of time than medium and dark roast coffee.',
       image: 'blonderoast.png',
@@ -101,7 +92,7 @@ db.once('open', async () => {
     },
     {
       name: 'Darkroast Coffee',
-      category: categories[1]._id,
+      product: products[7]._id,
       description:
         'Dark roast coffee which is bittersweet in taste, as well as decadent chocolaty flavor.',
       image: 'darkroast.png',
@@ -110,7 +101,7 @@ db.once('open', async () => {
     },
     {
       name: 'Frenchroast Coffee',
-      category: categories[1]._id,
+      product: products[7]._id,
       description:
         'Perfect for k-cup brewers and people on-the-go and ready for a warm mug of good brew.',
       image: 'frenchroast.png',
@@ -119,7 +110,7 @@ db.once('open', async () => {
     },
     {
       name: 'Lightroast Coffee',
-      category: categories[1]._id,
+      product: products[7]._id,
       description:
         'Light body and mellow flavors in our lightest roast. Balanced with smooth and rich flovours.',
       image: 'lightroast.png',
@@ -128,7 +119,7 @@ db.once('open', async () => {
     },
     {
       name: 'Mediumroast Coffee',
-      category: categories[1]._id,
+      product: products[7]._id,
       description:
         'Not as dark and bold as the darker ones, but offer more complexity than a lighter roast.',
       image: 'mediumroast.png',
@@ -138,7 +129,7 @@ db.once('open', async () => {
     //Tea
     {
       name: 'Black Tea',
-      category: categories[1]._id,
+      product: products[6]._id,
       description:
         'English Breakfast is our most popular tea. To create this well-balanced blend, we carefully select the finest teas from four different regions, each with its own unique characteristics.',
       image: 'blacktea.png',
@@ -147,7 +138,7 @@ db.once('open', async () => {
     },
     {
       name: 'Blueberry lavender Tea',
-      category: categories[1]._id,
+      product: products[6]._id,
       description:
       'Blueberry lavender Tea has the robustness from these regions is complemented by the softer and more subtle teas',
       image: 'blueberrylavendertea.png',
@@ -156,7 +147,7 @@ db.once('open', async () => {
     },
     {
       name: 'Camomile Tea',
-      category: categories[1]._id,
+      product: products[6]._id,
       description:
       'Since 1969, Celestial Seasonings has been committed to creating the most flavorful and inspiring cup of tea. We source the highest quality herbs, teas and botanicals, like our cool whistling peppermint cultivated in the Pacific Northwest and our golden, floral chamomile grown in the fields of Egypt.',
       image: 'camomiletea.png',
@@ -165,7 +156,7 @@ db.once('open', async () => {
     },
     {
       name: 'Green Tea',
-      category: categories[1]._id,
+      product: products[6]._id,
       description:
       'Our Decaffeinated Green Tea has a smooth taste and refreshing aroma that can be enjoyed hot or iced. Picked at the peak of flavor and naturally decaffeinated, the tea leaves are high in flavonoids and brew a full-bodied beverage that is light, fresh, and never bitter.',
       image: 'greentea.png',
@@ -174,7 +165,7 @@ db.once('open', async () => {
     },
     {
       name: 'Mint Tea',
-      category: categories[1]._id,
+      product: products[6]._id,
       description:
       'BRING ON THE CALM WITH THIS WARM HERBAL TISANE- A nourishing wholesome blend of real Peppermint leaves that brings nutrition with every delectable sip.',
       image: 'minttea.png',
@@ -183,7 +174,7 @@ db.once('open', async () => {
     },
     {
       name: 'Turmeric Ginger Tea',
-      category: categories[1]._id,
+      product: products[6]._id,
       description:
       'Turmeric Ginger is made by bringing water to a boil, adding turmeric, ginger, and cinnamon',
       image: 'turmericgingertea.png',

@@ -54,7 +54,7 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
+          Robingood
         </Link>
       </h1>
 
@@ -66,3 +66,4 @@ function Nav() {
 }
 
 export default Nav;
+
