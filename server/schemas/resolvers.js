@@ -10,7 +10,7 @@ const resolvers = {
     },
     products: async (parent, { category, name }) => {
       const params = {};
-
+    
       if (category) {
         params.category = category;
       }
@@ -23,6 +23,13 @@ const resolvers = {
 
       return await Product.find(params).populate('category');
     },
+    // getproductitems(product: ID) : [ProductItems]
+    getproductitems: async (parent, {id}) => {
+      return await Product.find({
+        product: id
+      });
+    },
+
     product: async (parent, { _id }) => {
       return await Product.findById(_id).populate('category');
     },
