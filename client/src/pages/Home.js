@@ -2,17 +2,17 @@ import React from "react";
 // import { Carousel } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import '../App.css'
-import Footer from '../components/Footer'
+import ProductList from "../components/ProductList"
 
 const Home = () => {
   return (
     <div className="container">
       <div>
-    
-      <Footer/>
-      </div>
-    </div>
+        <ProductList />
 
+      </div>
+
+    </div>
   );
 };
 

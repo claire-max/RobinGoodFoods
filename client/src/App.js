@@ -17,6 +17,8 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+import Header from "./components/Header/Header";
+import Carousel  from "./components/carousel/Carousel";
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -39,11 +41,20 @@ const client = new ApolloClient({
 
 function App() {
   return (
+    
     <ApolloProvider client={client}>
       <Router>
         <div>
+        <Nav />
+        
+        
+        <Header />
+        
+     <div class = "justify-content-right" >  
+        <Carousel/>
+        </div> 
           <StoreProvider>
-            <Nav />
+          
             <Routes>
               <Route 
                 path="/" 
@@ -74,6 +85,7 @@ function App() {
                 element={<NoMatch />} 
               />
             </Routes>
+         
           </StoreProvider>
         </div>
       </Router>
