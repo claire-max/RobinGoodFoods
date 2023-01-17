@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Auth from "../../utils/auth";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -6,6 +8,7 @@ export default function Header() {
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8">
       <nav>
+        
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
@@ -34,6 +37,7 @@ export default function Header() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
+
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/about">About</a>
