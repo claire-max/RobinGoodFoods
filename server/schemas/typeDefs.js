@@ -11,17 +11,9 @@ const typeDefs = gql`
     name: String
     description: String
     image: String
-    category: Category
-  }
-
-  type ProductItems {
-    _id: ID
-    name: String
-    description: String
-    image: String
     quantity: Int
     price: Float
-    product: Product
+    category: Category
   }
 
   type Order {
@@ -50,7 +42,6 @@ const typeDefs = gql`
   type Query {
     categories: [Category]
     products(category: ID, name: String): [Product]
-    getproductitems(product: ID) : [ProductItems]
     product(_id: ID!): Product
     user: User
     order(_id: ID!): Order
@@ -67,3 +58,4 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
+
