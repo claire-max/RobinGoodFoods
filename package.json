@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "bootstrap": "^3.4.1",
+    "mdb-react-ui-kit": "^5.1.0",
     "react-bootstrap": "^2.7.0",
-    "react-bootstrap-validation": "^0.1.11"
+    "react-bootstrap-validation": "^0.1.11",
+    "react-icons": "^4.7.1",
+    "styled-components": "^5.3.6"
   }
 }
