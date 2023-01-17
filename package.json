@@ -19,6 +19,8 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "react-bootstrap": "^2.7.0",
-    "react-bootstrap-validation": "^0.1.11"
+    "react-bootstrap-validation": "^0.1.11",
+    "react-easy-swipe": "^0.0.22",
+    "react-icons": "^4.7.1"
   }
 }
