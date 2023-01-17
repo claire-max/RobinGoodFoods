@@ -5,9 +5,15 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Drinks' },
-    { name: 'Merchandise' }
+    { name: 'Begels' },
+    { name: 'Croissants' },
+    { name: 'Jam' },
+    { name: 'Pancakes' },
+    { name: 'Syrup' },
+    { name: 'Bread' },
+    { name: 'Tea' },
+    { name: 'Coffee' },
+    { name: 'Swag' },
   ]);
 
   console.log('categories seeded');
@@ -15,81 +21,7 @@ db.once('open', async () => {
   await Product.deleteMany();
 
   const products = await Product.insertMany([
-    {
-      name: 'Bagels',
-      description:
-        'Bagel.',
-      image: 'bagel.jpg',
-      category: categories[0]._id,
-
-    },
-    {
-      name: 'Croissants',
-      description:
-        'Croissants.',
-      image: 'croissants.jpg',
-      category: categories[0]._id,
-
-    },
-    {
-      name: 'Jam',
-      category: categories[0]._id,
-      description:
-        'Jam.',
-      image: 'jam.jpg',
-
-    },
-    {
-      name: 'Pancakes',
-      category: categories[0]._id,
-      description:
-        'Pancakes.',
-      image: 'pancakes.jpg',
-
-    },
-    {
-      name: 'Syrup',
-      category: categories[0]._id,
-      description:
-        'Syrup.',
-      image: 'syrup.jpg',
-
-    },
-    {
-      name: 'Bread',
-      category: categories[0]._id,
-      description:
-        'Bread.',
-      image: 'bread.jpg',
-
-    },
-    {
-      name: 'Tea',
-      category: categories[1]._id,
-      description:
-        'Tea.',
-      image: 'tea.jpg',
-    },
-    {
-      name: 'Coffee',
-      category: categories[1]._id,
-      description:
-        'Coffee.',
-      image: 'coffee.jpg',
-    },
-    {
-      name: 'Merchandise',
-      category: categories[2]._id,
-      description:
-        'Merchandise',
-      image: 'Merchandise.jpeg',
-    }
-  ])
-
-  //Coffee
-  const productsItems = await ProductItems.insertMany([
-    // Adding products for Food
-    //Bagels
+     //Begels
     {
       name: 'Blueberry',
       category: products[0]._id,
@@ -109,7 +41,6 @@ db.once('open', async () => {
       quantity: 10
     },
     //Croissants
-
     {
       name: 'Almond',
       category: products[1]._id,
@@ -198,7 +129,6 @@ db.once('open', async () => {
       quantity: 1
     },
     // Pancakes
-
     {
       name: 'Apple Cinnamon with Amla',
       category: products[3]._id,
@@ -260,7 +190,6 @@ db.once('open', async () => {
     },
 
     //Syrup
-
     {
       name: 'Amber',
       category: products[4]._id,
@@ -578,8 +507,7 @@ db.once('open', async () => {
       price: 15.00,
       quantity: 1
     },
-
-  ]);
+  ])
 
   console.log('products seeded');
 
