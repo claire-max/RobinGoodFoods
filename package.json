@@ -4,8 +4,8 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js --ignore client",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
@@ -20,6 +20,8 @@
     "@fortawesome/fontawesome-free": "^6.2.1",
     "bootstrap": "^3.4.1",
     "mdb-react-ui-kit": "^5.1.0",
+    "mongodb": "^4.13.0",
+    "mongoose-validation-error-message-handler": "^1.2.5",
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-validation": "^0.1.11",
     "react-easy-swipe": "^0.0.22",
