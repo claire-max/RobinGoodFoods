@@ -2,24 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../App.css'
 import ProductList from "../components/ProductList"
+import CategoryMenu from "../components/CategoryMenu";
 import Footer from "../components/Footer"
 import Carousel from  "../components/carousel/Carousel"
 
 const Home = () => {
-  return (
-   
-      
-       <div>
-             
-     <div class = "justify-content-right" >  
+  return (      
+       <div>        
+        <div class = "justify-content-right">  
         <Carousel/>
-        </div> 
-        
+        </div>     
         <ProductList />
-       
-        <Footer/>
-      
-        </div>
+        <CategoryMenu />     
+        <Footer/>  
+       </div>
    
   );
 };
