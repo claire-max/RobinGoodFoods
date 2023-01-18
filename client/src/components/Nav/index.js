@@ -33,13 +33,8 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/login">
-              Login
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/detail">
-              Detail
+            <Link to="/home">
+              Home
             </Link>
           </li>
           <li className="mx-1">
@@ -58,8 +53,7 @@ function Nav() {
       <h1>
     
        <Link to="/">
-          {/* <span role="img" aria-label="shopping bag"></span> */}
-          <img src={Logo}/>
+          <img className="logoyogo" src={Logo}/>
           
         </Link> 
       </h1>

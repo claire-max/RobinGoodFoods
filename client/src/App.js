@@ -49,12 +49,6 @@ function App() {
         <div>
         <Nav />
         
-        
-      
-        
-     <div class = "justify-content-right" >  
-        <Carousel/>
-        </div> 
           <StoreProvider>
           
             <Routes>
