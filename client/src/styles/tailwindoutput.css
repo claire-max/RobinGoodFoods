@@ -416,6 +416,8 @@ img,
 video {
   max-width: 100%;
   height: auto;
+  margin: auto;
+  
 }
 
 /*
@@ -664,4 +666,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:hidden {
     display: none;
   }
+}
+
+
+.logoyogo {
+  display: flex;
+  justify-content: center;
+  height:100px;
 }
