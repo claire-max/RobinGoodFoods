@@ -1,6 +1,9 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Header from "../Header/Header";
+import Logo from "../../images/Logo/logo.png";
+
 
 function Nav() {
 
@@ -51,11 +54,14 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
+      <Header/>
       <h1>
-        <Link to="/">
-          <span role="img" aria-label="shopping bag"></span>
-          Robingood
-        </Link>
+    
+       <Link to="/">
+          {/* <span role="img" aria-label="shopping bag"></span> */}
+          <img src={Logo}/>
+          
+        </Link> 
       </h1>
 
       <nav>
