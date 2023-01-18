@@ -2,7 +2,7 @@ import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
-import Logo from "../../images/Logo/logo.png";
+import Logo from "../../images/Logo/logo.jpg";
 
 
 function Nav() {

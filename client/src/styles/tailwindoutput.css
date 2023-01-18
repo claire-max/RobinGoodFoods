@@ -656,7 +656,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
   }
