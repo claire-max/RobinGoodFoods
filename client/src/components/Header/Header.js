@@ -40,7 +40,7 @@ export default function Header() {
 
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">About</a>
+                <a href="/signin">Sign In</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/portfolio">Portfolio</a>
