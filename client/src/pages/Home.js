@@ -8,13 +8,16 @@ import Video from "../components/Video/vid";
 import Hero from "../components/Hero/herobanner";
 
 
+import CategoryMenu from "../components/CategoryMenu";
+
+
+
+
 const Home = () => {
-  return (
-   
-      
-       <div>
-             
-     <div class = "justify-content-right" >  
+  return (  
+    
+       <div>        
+        <div class = "justify-content-right">  
         <Carousel/>
         </div> 
        
@@ -23,9 +26,9 @@ const Home = () => {
         <ProductList />
        
         <Footer/>
-      
-        </div>
-   
+        </div>  
+        
+
   );
 };
 

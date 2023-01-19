@@ -1,8 +1,8 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('sk_test_51MPIiSFD5mAH1xxvatxyOCIvVhadpwX6wHbOtk9Is9HE0E4tZxulw96PP46BNgNTnFfkDZw42Bd60cgtandqK5d900oaHXTL4b');
-// the key used above is the 'secret key'. this is the 'publisher key: pk_test_51MPIiSFD5mAH1xxvzpyHRB0GSubyEEMrxflLSCO8OK9qBN7BAgj9bblD0DxGF1cdwcaOUIiUChb07XW2a3fSVn9a00S5Iiav3J
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
 const resolvers = {
   Query: {
     categories: async () => {
