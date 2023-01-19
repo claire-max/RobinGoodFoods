@@ -69,6 +69,37 @@ flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.categoryTitle{
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 40px;
+}
+.categoryButton{
+  padding: 20px 60px;
+  background-color: rgb(116, 132, 85);
+  margin: 2px 11px;
+  font-size: 17px;
+  display: inline-block;
+  border-radius: 30px;
+  font-weight: bolder;
+  color: white;
+}
+
+.categoryButton:hover {
+  color: bisque;
+}
+
+.addToCart{
+  background-color: rgb(116, 132, 85);
+  border-radius: 30px;
+  margin: 15px 110px;
+  padding: 20px 10px;
+  color: white;
+}
+
+.addToCart:hover {
+  color: bisque;
+}
 
 .App-link {
   color: #61dafb;

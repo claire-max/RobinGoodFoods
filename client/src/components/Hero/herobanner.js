@@ -1,5 +1,5 @@
 import React from "react";
-
+import productLink from "../CategoryMenu"
 
 export default function HeroComponent() {
     return (
