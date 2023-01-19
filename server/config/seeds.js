@@ -5,15 +5,51 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Begels' },
-    { name: 'Croissants' },
-    { name: 'Jam' },
-    { name: 'Pancakes' },
-    { name: 'Syrup' },
-    { name: 'Bread' },
-    { name: 'Tea' },
-    { name: 'Coffee' },
-    { name: 'Swag' },
+    {
+      name: 'Bagel',
+      description: 'Plain Soft & Chewy Pre-Sliced Bagels',
+      image: 'bagel.jpg',
+    },
+    {
+      name: 'Croissants',
+      description: 'Croissants',
+      image: 'croissants.jpg',
+    },
+    {
+      name: 'Jam',
+      description: 'Croissants',
+      image: 'jam.jpg',
+    },
+    { 
+      name: 'Pancakes',
+      description: 'Croissants',
+      image: 'pancakes.jpg',
+   },
+    { 
+      name: 'Syrup',
+      description: 'Syrup',
+      image: 'syrup.jpg',
+    
+    },
+    { 
+      name: 'Bread',
+      description: 'Bread',
+      image: 'bread.jpg', },
+    { 
+      name: 'Tea',
+      description: 'Tea',
+      image: 'tea.jpg',
+     },
+    { 
+      name: 'Coffee',
+      description: 'Coffee',
+      image: 'coffee.jpg',
+     },
+    { 
+      name: 'Swag',
+      description: 'Swag',
+      image: 'Merchandise.jpeg',
+     },
   ]);
 
   console.log('categories seeded');
@@ -282,7 +318,7 @@ db.once('open', async () => {
       quantity: 30
     },
     {
-      name: 'Blueberry lavender Tea',     
+      name: 'Blueberry lavender Tea',
       description:
         'Blueberry lavender Tea has the robustness from these regions is complemented by the softer and more subtle teas',
       image: 'blueberrylavendertea.png',
@@ -291,7 +327,7 @@ db.once('open', async () => {
       quantity: 30
     },
     {
-      name: 'Camomile Tea',     
+      name: 'Camomile Tea',
       description:
         'Since 1969, Celestial Seasonings has been committed to creating the most flavorful and inspiring cup of tea. We source the highest quality herbs, teas and botanicals, like our cool whistling peppermint cultivated in the Pacific Northwest and our golden, floral chamomile grown in the fields of Egypt.',
       image: 'camomiletea.png',
@@ -300,7 +336,7 @@ db.once('open', async () => {
       quantity: 30
     },
     {
-      name: 'Green Tea',     
+      name: 'Green Tea',
       description:
         'Our Decaffeinated Green Tea has a smooth taste and refreshing aroma that can be enjoyed hot or iced. Picked at the peak of flavor and naturally decaffeinated, the tea leaves are high in flavonoids and brew a full-bodied beverage that is light, fresh, and never bitter.',
       image: 'greentea.png',
@@ -309,7 +345,7 @@ db.once('open', async () => {
       quantity: 35
     },
     {
-      name: 'Mint Tea',    
+      name: 'Mint Tea',
       description:
         'BRING ON THE CALM WITH THIS WARM HERBAL TISANE- A nourishing wholesome blend of real Peppermint leaves that brings nutrition with every delectable sip.',
       image: 'minttea.png',
@@ -318,7 +354,7 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'Turmeric Ginger Tea',    
+      name: 'Turmeric Ginger Tea',
       description:
         'Turmeric Ginger is made by bringing water to a boil, adding turmeric, ginger, and cinnamon',
       image: 'turmericgingertea.png',

@@ -8,6 +8,7 @@ import {
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
+
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
 
@@ -43,14 +44,19 @@ function CategoryMenu() {
 
   return (
     <div>
+      <h2 class="categoryTitle">Products</h2>
       {categories.map((item) => (
-        <button
+        
+        <button class="categoryButton"
           key={item._id}
           onClick={() => {
             handleClick(item._id);
           }}
         >
+        
+        <p>{item.description}</p>
           {item.name}
+          
         </button>
       ))}
     </div>
@@ -58,4 +64,3 @@ function CategoryMenu() {
 }
 
 export default CategoryMenu;
-//item.main gets us info/images
