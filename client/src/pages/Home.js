@@ -8,6 +8,7 @@ import Video from "../components/Video/vid";
 import Hero from "../components/Hero/herobanner";
 import Category from "../components/CategoryMenu";
 
+
 const Home = () => {
   return (  
     

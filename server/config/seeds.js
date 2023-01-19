@@ -59,19 +59,19 @@ db.once('open', async () => {
   const products = await Product.insertMany([
     //Begels
     {
-      name: 'Blueberry',
+      name: 'Blueberry Bagel',
       description:
         'Remix your morning with our organic blueberry bagels',
-      image: 'Blueberry.png',
+      image: 'BlueberryBagel.png',
       category: categories[0]._id,
       price: 30.00,
       quantity: 10
     },
     {
-      name: 'Classic',
+      name: 'Classic Bagel',
       description:
         'Start your morning right with our classic organic bagel that will make your breakfast epic!',
-      image: 'Classic.png',
+      image: 'OriginalBagel.png',
       category: categories[0]._id,
       price: 30.00,
       quantity: 10
@@ -189,7 +189,7 @@ db.once('open', async () => {
       name: 'Classic with Reishi',
       description:
         'Our Classic mix is deliciously balanced with whole grains and good for the mind, body and planet.',
-      image: 'pancakeclassic.png',
+      image: 'pancaketurmeric.png',
       category: categories[3]._id,
       price: 13.00,
       quantity: 1
@@ -505,7 +505,7 @@ db.once('open', async () => {
       image: 'sweatshirtmoreselflove.png',
       category: categories[8]._id,
       price: 9.99,
-      quantity: 1,
+      quantity: 1
     },
     {
       name: 'Teddy Bear',
