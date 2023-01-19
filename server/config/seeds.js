@@ -469,7 +469,7 @@ db.once('open', async () => {
       image: 'sweatshirtmoreselflove.png',
       category: categories[8]._id,
       price: 9.99,
-      quantity: 1
+      quantity: 1,
     },
     {
       name: 'Teddy Bear',

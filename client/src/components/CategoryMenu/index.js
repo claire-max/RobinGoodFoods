@@ -58,3 +58,4 @@ function CategoryMenu() {
 }
 
 export default CategoryMenu;
+//item.main gets us info/images
