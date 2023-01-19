@@ -600,9 +600,82 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-top: calc(0.5rem * calc( 1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+
+
+@media (min-width: 300px) {
+  .logobogo{
+    --tw-space-y-reverse: -3;
+    margin-top: calc(0.rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+    width: 50%;
+  }
+}
+@media (min-width: 640px) {
+  .logobogo{
+    --tw-space-y-reverse: -4;
+    margin-top: calc(0.rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(10.5rem * calc(1 - var(--tw-space-x-reverse)));
+    width: 50%;
+}
+}
+
+@media (min-width: 768px) {
+  .logobogo{
+    --tw-space-y-reverse: -4;
+    margin-top: calc(0.rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(15rem * calc(1 - var(--tw-space-x-reverse)));
+    width: 40%;
+}
+}
+
+@media (min-width: 1141px) {
+  .logobogo{
+    --tw-space-y-reverse: -4;
+    margin-top: calc(0.rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(20.5rem * calc(1 - var(--tw-space-x-reverse)));
+    width: 30%;
+}
+}
+
+@media (min-width: 1280px) {
+  .logobogo{
+    --tw-space-y-reverse: -4;
+    margin-top: calc(0.rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(20.5rem * calc(1 - var(--tw-space-x-reverse)));
+    width: 30%;
+}
+}
+
+@media (min-width: 1200px) {
+  .logobogo{
+    --tw-space-y-reverse: -4;
+    margin-top: calc(0.rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(25.5rem * calc(1 - var(--tw-space-x-reverse)));
+    width: 30%;
+}
+}
+
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -656,7 +729,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 2024px) {
   .lg\:flex {
     display: flex;
   }

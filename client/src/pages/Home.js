@@ -1,19 +1,21 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import '../App.css'
-import ProductList from "../components/ProductList"
+import CategoryMenu from "../components/CategoryMenu";
 import Footer from "../components/Footer"
+import Carousel from  "../components/carousel/Carousel"
+
 
 const Home = () => {
-  return (
-    // <div className="container">
-      <div>
-        <ProductList />
-       
-        <Footer/>
-      </div>
-     
+  return (      
+       <div>        
+        <div class = "justify-content-right">  
+        <Carousel/>
+        </div>     
+        {/* <ProductList />
+        <CategoryMenu />     
+        <Footer/>   */}
+       </div>
    
   );
 };
