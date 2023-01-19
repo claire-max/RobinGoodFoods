@@ -49,10 +49,19 @@ export default function Header() {
                 <a href="/signup">Sign Up</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Portfolio</a>
+                <a href="/login">Login</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Contact</a>
+                <a href="/contact">Pankcakes</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/signup">Baked Goods</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/portfolio">Coffee & Tea </a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/contact">Merch</a>
               </li>
             </ul>
           </div>
