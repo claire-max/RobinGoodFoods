@@ -47,8 +47,14 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-        <Nav />
+        {/* <Nav /> */}
         
+        <Header/>
+      
+        
+     <div class = "justify-content-right" >  
+        <Carousel/>
+        </div> 
           <StoreProvider>
           
             <Routes>

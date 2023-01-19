@@ -2,14 +2,19 @@ import React from "react";
 import { useState } from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import Logo from "../../images/Logo/logo.jpg";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8">
+      <div id="header" className="flex items-center justify-between border-b border-gray-400 py-8">
+   
       <nav>
-        
+      <div className="logobogo items-center lg">
+    <Link to="/">
+       <img src={Logo}/>
+     </Link> 
+   </div> 
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
@@ -38,16 +43,25 @@ export default function Header() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-
+    
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/signup">Sign Up</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Portfolio</a>
+                <a href="/login">Login</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Contact</a>
+                <a href="/contact">Pankcakes</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/signup">Baked Goods</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/portfolio">Coffee & Tea </a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/contact">Merch</a>
               </li>
             </ul>
           </div>
@@ -64,6 +78,7 @@ export default function Header() {
             <a href="/contact">Contact</a>
           </li>
         </ul>
+    
       </nav>
       <style>{`
       .hideMenuNav {
@@ -83,7 +98,9 @@ export default function Header() {
         justify-content: space-evenly;
         align-items: center;
       }
+    
     `}</style>
+ 
     </div>
   );
 }

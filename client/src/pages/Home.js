@@ -12,9 +12,9 @@ const Home = () => {
         <div class = "justify-content-right">  
         <Carousel/>
         </div>     
-        <ProductList />
+        {/* <ProductList />
         <CategoryMenu />     
-        <Footer/>  
+        <Footer/>   */}
        </div>
    
   );
