@@ -4,7 +4,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 export default function App() {
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white' style={{ backgroundColor: 'rgba(128, 160, 128)' }}>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white' style={{ backgroundColor: 'rgba(116,132,85)' }}>
         <div className='me-5 d-none d-lg-block'>
           <span>Let's Connect</span>
         </div>
@@ -110,12 +110,6 @@ export default function App() {
         </MDBContainer>
       </section>
 
-      <div className='text-center text-light p-2  bg-dark p-2 text-light bg-opacity-75' >
-        © 2023 Copyright:
-        <a className='text-reset fw-bold .text-white ' href='https://mdbootstrap.com/'>
-          RobinGoodFoods
-        </a>
-      </div>
     </MDBFooter>
   );
 }
