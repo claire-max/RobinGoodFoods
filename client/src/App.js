@@ -18,7 +18,6 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Header from "./components/Header/Header";
-import Carousel  from "./components/carousel/Carousel";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -53,7 +52,7 @@ function App() {
       
         
      <div class = "justify-content-right" >  
-        <Carousel/>
+       
         </div> 
           <StoreProvider>
           

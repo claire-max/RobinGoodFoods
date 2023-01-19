@@ -1,0 +1,17 @@
+/* .video-container {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+  }
+  
+  .video-container video {
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+  } */
+
+  .btn {
+    color:rgb(100, 67, 67)
+  }

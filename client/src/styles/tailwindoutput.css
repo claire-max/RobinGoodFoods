@@ -738,3 +738,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 }
+
+.logoyogo {
+  display: flex;
+  justify-content: center;
+  height:100px;
+}
+
+.btnbb {
+ 
+  background-color: #fff;
+  size-adjust: 60px;
+  font-size: larger;
+  border-radius: 20px 20px;
+  
+
+}
+
+.heroban {
+  font-size:x-large;
+}

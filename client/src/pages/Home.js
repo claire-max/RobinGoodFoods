@@ -1,22 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../App.css'
+import '../App.css';
+import ProductList from "../components/ProductList";
+import Footer from "../components/Footer";
+import Carousel from  "../components/carousel/Carousel";
+import Video from "../components/Video/vid";
+import Hero from "../components/Hero/herobanner";
+
+
 import CategoryMenu from "../components/CategoryMenu";
-import Footer from "../components/Footer"
-import Carousel from  "../components/carousel/Carousel"
+
+
 
 
 const Home = () => {
-  return (      
+  return (  
+    
        <div>        
         <div class = "justify-content-right">  
         <Carousel/>
-        </div>     
-        {/* <ProductList />
-        <CategoryMenu />     
-        <Footer/>   */}
-       </div>
-   
+        </div> 
+       
+        <Hero/>
+        <Video/>
+        <ProductList />
+       
+        <Footer/>
+        </div>  
+        
+
   );
 };
 
