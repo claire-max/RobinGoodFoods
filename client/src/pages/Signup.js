@@ -31,14 +31,20 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/login">← Go to Login</Link>
+    
+    <div className="headersign">
+      <header className="head font-bold text-lg "  style={{  fontSize:"x-large", textAlign: "center" }}>Welcome!</header>
+      <Link className="btngotologin" to="/login">Go to Login</Link>
+      <div clasName="bg-img2"  style={{  height:'75%' , textAlign: "center" }}></div>
+      <br></br>
+      <img src="https://images.pexels.com/photos/8472489/pexels-photo-8472489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
 
-      <h2>Signup</h2>
+      <div className="containersign my-1">
+       <h10>Signup</h10>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row text-white space-between my-2">
           <label htmlFor="firstName">First Name:</label>
-          <input
+          <input style={{height: "40px"}}
             placeholder="First"
             name="firstName"
             type="firstName"
@@ -46,9 +52,9 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row text-white space-between my-2">
           <label htmlFor="lastName">Last Name:</label>
-          <input
+          <input style={{height: "40px"}}
             placeholder="Last"
             name="lastName"
             type="lastName"
@@ -56,9 +62,9 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row text-white space-between my-2">
           <label htmlFor="email">Email:</label>
-          <input
+          <input className="text-dark" style={{height: "40px"}}
             placeholder="youremail@test.com"
             name="email"
             type="email"
@@ -66,9 +72,9 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row text-white space-between my-2">
           <label htmlFor="pwd">Password:</label>
-          <input
+          <input style={{height: "40px"}}
             placeholder="******"
             name="password"
             type="password"
@@ -77,10 +83,13 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button className="submitsignbtn" style={{backgroundColor:'rgb(72, 61, 61)'}} type="submit">Submit</button>
         </div>
+        <br></br>
       </form>
     </div>
+    </div>
+    
   );
 }
 

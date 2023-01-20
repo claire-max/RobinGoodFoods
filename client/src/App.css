@@ -113,3 +113,107 @@ flex-direction: column;
     transform: rotate(360deg);
   }
 }
+
+/* Login Page*/
+
+.containerlogin {
+  border : 3px solid white;
+  border-radius: 10px;
+  display: flex;
+ text-align: center;
+ align-items: center;
+ background-color: rgba(116,132,85);
+ flex-direction: column;
+ box-sizing:border-box ;
+  
+}
+
+.bg-img {
+   background-image: url("https://images.pexels.com/photos/4109384/pexels-photo-4109384.jpeg"); 
+}
+
+input {
+ width: 50%;
+   padding: 20px; 
+  border-radius: 20px;
+  height: 50%;
+  text-align:center;
+  color:rgb(59, 43, 43);
+}
+
+Link {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.btndotosign {
+  background-color: rgb(72, 61, 61);
+  border-radius: 30px;
+  padding: 8px;
+  color:white;
+}
+
+.headerlog {
+  padding-top: 2rem; 
+}
+
+h9 {
+  color:white;
+  font-size: x-large;
+  text-align: center ;
+}
+
+.submitlogbtn {
+  border-radius: 20px;
+ padding:1rem;
+  color:white;
+
+}
+
+/*Signup Page*/
+
+.containersign {
+  border : 3px solid white;
+  border-radius: 10px;
+  display: flex;
+ text-align: center;
+ align-items: center;
+ background-color: rgba(116,132,85);
+ flex-direction: column;
+ box-sizing:border-box;
+}
+
+.submitsignbtn {
+  border-radius: 30px;
+  padding:1rem;
+  color: white;
+}
+
+.btngotologin {
+  background-color: rgb(72, 61, 61);
+  border-radius: 30px;
+  padding: 8px;
+  color:white;
+}
+
+h10 {
+  color:white;
+  font-size: x-large;
+  text-align: center ;
+  
+}
+/* Hero Banner */
+
+.containerhero {
+  display: flex;
+}
+
+.heroban {
+  color:white;
+  
+}
+
+.heroban2 {
+  color: white;
+  
+}
