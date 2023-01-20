@@ -26,5 +26,9 @@
     "react-bootstrap-validation": "^0.1.11",
     "react-easy-swipe": "^0.0.22",
     "react-icons": "^4.7.1"
+  },
+  "engines": {
+    "node": "16.x"
+    
   }
 }
