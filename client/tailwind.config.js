@@ -8,18 +8,18 @@ module.exports = {
   plugins: [],
 }
 
-module.exports = {
+// module.exports = {
 
-  plugins: [
-      require('flowbite/plugin')
-  ]
+//   plugins: [
+//       require('flowbite/plugin')
+//   ]
 
-}
-module.exports = {
+// }
+// module.exports = {
 
-  content: [
-      // ...
-      'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
-  ]
+//   content: [
+//       // ...
+//       'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+//   ]
 
-}
+// }
