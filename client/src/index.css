@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #ffffff;
   --secondary: #F3A847;
@@ -8,9 +12,7 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 * {
   box-sizing: border-box;
