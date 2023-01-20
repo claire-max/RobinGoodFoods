@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
+import Footer from "../components/Footer";
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -30,14 +32,22 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/signup">← Go to Signup</Link>
+    <div className="headerlog">
+      <header className="head font-bold text-lg"  style={{  fontSize:"x-large", textAlign: "center" }}>Welcome Back!</header>
+      <Link to="/signup"><button className="btndotosign">Go to Signup</button></Link>
+    <div clasName="bg-img"  style={{  height:'75%' , textAlign: "center" }}>
+    <br></br>
+    <img src="https://images.pexels.com/photos/4109384/pexels-photo-4109384.jpeg">
+  </img>
+ 
+    <div className="containerlogin my-1">
+     
 
-      <h2>Login</h2>
+      <h9>Login</h9>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row space-between my-2 text-white">
           <label htmlFor="email">Email address:</label>
-          <input
+          <input style={{height: "40px"}}
             placeholder="youremail@test.com"
             name="email"
             type="email"
@@ -45,9 +55,9 @@ function Login(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row space-between my-2 text-white">
           <label htmlFor="pwd">Password:</label>
-          <input
+          <input style={{height: "40px"}}
             placeholder="******"
             name="password"
             type="password"
@@ -61,10 +71,17 @@ function Login(props) {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button className="submitlogbtn" style={{backgroundColor:'rgb(72, 61, 61)'}} type="submit">Submit</button>
+          
         </div>
+        <br></br>
       </form>
+  
+      </div>
     </div>
+   
+    </div>
+  
   );
 }
 
