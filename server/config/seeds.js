@@ -412,7 +412,7 @@ db.once('open', async () => {
       name: 'Black Hat',
       description:
         'Complete your look with this fitted Baseball Cap, your perfect wardrobe-essential accessory',
-      image: 'backofblack.png',
+      image: 'blackhat.png',
       category: categories[8]._id,
       price: 29.99,
       quantity: 1
@@ -421,7 +421,7 @@ db.once('open', async () => {
       name: 'White Hat',
       description:
         'Keeps you warm or cool, hypoallergenic, washable, packable, shapeable, water repellent or water resistant, lightweight.',
-      image: 'backofwhitehat.png',
+      image: 'whitehat.png',
       category: categories[8]._id,
       price: 29.99,
       quantity: 1
