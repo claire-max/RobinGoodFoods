@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 import Footer from "../components/Footer";
+import "../App.css";
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -76,8 +77,8 @@ function Login(props) {
         </div>
         <br></br>
       </form>
-  
       </div>
+      <Footer />
     </div>
    
     </div>

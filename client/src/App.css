@@ -177,9 +177,10 @@ h10 {
 
 /* Hero Banner */
 
-.containerhero {
+/* .containerhero {
   display: flex;
-}
+  margin: auto;
+} */
 
 .heroban {
   color: white;
@@ -188,6 +189,7 @@ h10 {
 
 .heroban2 {
   color: white;
+
 
 }
 
@@ -268,5 +270,85 @@ h10 {
       width: 50%;
       height: auto;
   }
+
+  
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: larger;
+  background-color: rgba(116,132,85);
+  justify-content: center;
+  color: white;
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-info  {
+  display: flex;
+  justify-content: center; 
+}
+
+.footer-info-left, .footer-info-right {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 40%;
+  align-items: center;
+}
+
+.footer-info__name {
+  margin-bottom: 20px;
+}
+
+.footer-info__name {
+  text-align: start;
+}
+
+.footer-bottom__name {
+  text-transform: uppercase;
+  font-size: large;
+  margin: 0px 20px;
+}
+
+.footer-info_products {
+  font-size: x-large;
+}
+
+.listitems1 {
+  font-size: medium;
+  color: rgb(56, 47, 47);
+}
+
+.footer-info-useful {
+  font-size: x-large;
+}
+
+.listitems2 {
+  font-size: medium;
+  color: rgb(56, 47, 47);
+}
+
+.footer-info-right {
+  font-size: x-large;
+}
+
+.listitems3 {
+  font-size: medium;
+  color: rgb(56, 47, 47);
+}
+
+.Socialss {
+  display: flex;
+  align-items:center;
 
 }
