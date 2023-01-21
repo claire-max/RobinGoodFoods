@@ -63,6 +63,9 @@ export default function Header() {
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/contact">Merch</a>
               </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/meetus">Meet the Team</a>
+              </li>
             </ul>
           </div>
         </section>
