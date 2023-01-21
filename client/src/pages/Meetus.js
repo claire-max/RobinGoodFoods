@@ -6,6 +6,8 @@ import claire from "../images/Meettheteam/claireLONDON copy.jpg";
 import santi from "../images/Meettheteam/SantiagoInArgentina copy.jpg";
 import prateek from "../images/Meettheteam/prateekYOLK copy.jpeg";
 import rima from "../images/Meettheteam/remaAtTheBeach copy.jpeg";
+import suzanne from "../images/Meettheteam/sue.jpg";
+
 
 export default function meetus() {
     const posts = [
@@ -32,8 +34,8 @@ export default function meetus() {
 
         {
           title: "Suzanne",
-          img: "https://cdn.pixabay.com/photo/2019/12/17/14/43/christmas-4701783__340.png",
-          content: <a href="https://github.com/claire-max"><AiOutlineGithub/></a>
+          img: suzanne, 
+          content: <a href="https://github.com/subie23"><AiOutlineGithub/></a>
       },
     ];
     return (
