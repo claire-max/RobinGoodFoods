@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from "../components/Footer";
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
@@ -45,6 +46,7 @@ function OrderHistory() {
           </>
         ) : null}
       </div>
+      <Footer/>
     </>
   );
 }
