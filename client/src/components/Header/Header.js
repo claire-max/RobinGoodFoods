@@ -52,7 +52,7 @@ export default function Header() {
                 <a href="/login">Login</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Pankcakes</a>
+                <a href="/contact">Pancakes</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/signup">Baked Goods</a>
@@ -61,7 +61,7 @@ export default function Header() {
                 <a href="/portfolio">Coffee & Tea </a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Merch</a>
+                <a href="/contact">Merchandise</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/meetus">Meet the Team</a>

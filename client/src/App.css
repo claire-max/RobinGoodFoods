@@ -9,44 +9,46 @@
 
 /* Food icon home */
 
-.menuContainer{
-margin-top: 10%;
-display: flex;
-flex-direction: column;
+.menuContainer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
 
 }
 
 /* Food Section */
-.food{
+.food {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
 }
-.sweetmeatText{
+
+.sweetmeatText {
   padding-left: 10%;
   padding-top: 2%
 }
 
-.sweetmeatImage{
+.sweetmeatImage {
   width: 30%;
   height: 30%;
   border: brown 4px solid;
 }
 
 /* Drink Section */
-.drinks{
+.drinks {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
 }
-.teacoffText{
+
+.teacoffText {
   padding-left: 10%;
   padding-top: 2%
 }
 
-.drinkImage{
+.drinkImage {
   width: 30%;
   height: 40%;
   border: brown 4px solid;
@@ -69,37 +71,6 @@ flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.categoryTitle{
-  padding: 20px 20px;
-  text-align: center;
-  font-size: 40px;
-}
-.categoryButton{
-  padding: 20px 60px;
-  background-color: rgb(116, 132, 85);
-  margin: 2px 11px;
-  font-size: 17px;
-  display: inline-block;
-  border-radius: 30px;
-  font-weight: bolder;
-  color: white;
-}
-
-.categoryButton:hover {
-  color: bisque;
-}
-
-.addToCart{
-  background-color: rgb(116, 132, 85);
-  border-radius: 30px;
-  margin: 15px 110px;
-  padding: 20px 10px;
-  color: white;
-}
-
-.addToCart:hover {
-  color: bisque;
-}
 
 .App-link {
   color: #61dafb;
@@ -109,6 +80,7 @@ flex-direction: column;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -117,28 +89,28 @@ flex-direction: column;
 /* Login Page*/
 
 .containerlogin {
-  border : 3px solid white;
+  border: 3px solid white;
   border-radius: 10px;
   display: flex;
- text-align: center;
- align-items: center;
- background-color: rgba(116,132,85);
- flex-direction: column;
- box-sizing:border-box ;
-  
+  text-align: center;
+  align-items: center;
+  background-color: rgb(72, 61, 61);
+  flex-direction: column;
+  box-sizing: border-box;
+
 }
 
 .bg-img {
-   background-image: url("https://images.pexels.com/photos/4109384/pexels-photo-4109384.jpeg"); 
+  background-image: url("https://images.pexels.com/photos/4109384/pexels-photo-4109384.jpeg");
 }
 
 input {
- width: 50%;
-   padding: 20px; 
+  width: 50%;
+  padding: 20px;
   border-radius: 20px;
   height: 50%;
-  text-align:center;
-  color:rgb(59, 43, 43);
+  text-align: center;
+  color: rgb(59, 43, 43);
 }
 
 Link {
@@ -150,42 +122,42 @@ Link {
   background-color: rgb(72, 61, 61);
   border-radius: 30px;
   padding: 8px;
-  color:white;
+  color: white;
 }
 
 .headerlog {
-  padding-top: 2rem; 
+  padding-top: 2rem;
 }
 
 h9 {
-  color:white;
+  color: white;
   font-size: x-large;
-  text-align: center ;
+  text-align: center;
 }
 
 .submitlogbtn {
   border-radius: 20px;
- padding:1rem;
-  color:white;
+  padding: 1rem;
+  color: white;
 
 }
 
 /*Signup Page*/
 
 .containersign {
-  border : 3px solid white;
+  border: 3px solid white;
   border-radius: 10px;
   display: flex;
- text-align: center;
- align-items: center;
- background-color: rgba(116,132,85);
- flex-direction: column;
- box-sizing:border-box;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(116, 132, 85);
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .submitsignbtn {
   border-radius: 30px;
-  padding:1rem;
+  padding: 1rem;
   color: white;
 }
 
@@ -193,15 +165,16 @@ h9 {
   background-color: rgb(72, 61, 61);
   border-radius: 30px;
   padding: 8px;
-  color:white;
+  color: white;
 }
 
 h10 {
-  color:white;
+  color: white;
   font-size: x-large;
-  text-align: center ;
-  
+  text-align: center;
+
 }
+
 /* Hero Banner */
 
 /* .containerhero {
@@ -210,12 +183,94 @@ h10 {
 } */
 
 .heroban {
-  color:white;
-  
+  color: white;
+
 }
 
 .heroban2 {
   color: white;
+
+
+}
+
+/* Landing page Product title */
+.categoryTitle {
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Landing page Product buttons */
+.categoryButton {
+  padding: 20px 60px;
+  background-color: rgb(72, 61, 61);
+  margin: 2px 10px;
+  font-size: 17px;
+  display: inline-block;
+  border-radius: 30px;
+  font-weight: bolder;
+  color: white;
+}
+
+.categoryButton:hover {
+  color: bisque;
+}
+
+/* Landing page Add to cart buttons */
+.addToCart {
+  background-color: rgb(72, 61, 61);
+  color: white;
+  border-radius: 30px;
+  margin: 15px 52px;
+  padding: 20px 36px;
+  width: 100%;
+  min-width: 20px;
+  max-width: 71%;
+
+}
+
+.addToCart:hover {
+  color: bisque;
+}
+
+/* Product Images */
+.productImages {
+  width: 90%;
+  height: 73%;
+}
+
+.allProductContainer{
+  display: flex;
+  flex-direction: row;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+}
+.productItemContainer{
+  height: auto;
+}
+@media (max-width:992px) {
+  body {
+      width: 100%;
+      height: auto;
+  }
+
+}
+
+@media (max-width:768px) {
+  body {
+      width: 100%;
+      height: auto;
+  }
+
+}
+@media (max-width:481px) {
+  body {
+      width: 50%;
+      height: auto;
+  }
+
   
 }
 
@@ -295,4 +350,5 @@ h10 {
 .Socialss {
   display: flex;
   align-items:center;
+
 }
