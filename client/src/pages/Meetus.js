@@ -1,7 +1,5 @@
 import React from "react";
 import { AiOutlineGithub} from 'react-icons/ai';
-
-
 import claire from "../images/Meettheteam/claireLONDON copy.jpg";
 import santi from "../images/Meettheteam/SantiagoInArgentina copy.jpg";
 import prateek from "../images/Meettheteam/prateekYOLK copy.jpeg";
