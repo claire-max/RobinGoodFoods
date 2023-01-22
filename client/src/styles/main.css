@@ -781,41 +781,52 @@ Ensure the default browser behavior of the `hidden` attribute.
  
   }
   .div2{
-    max-width: 1240px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
     display: grid;
     background-color: #212121;
     grid-template-columns: repeat(3, 2fr);
-  }
-  @media (min-width: 768px) {
-    .div2 {
+    /* grid-template-columns: (3, 2fr, 2fr); */
     
+  }
+  @media (max-width: 1240px)
+   {
+    .div2 {
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto;
       gap: 2rem;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(2, 1fr));
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: (3, 2fr, 2fr);
+      
     }
 }
+
 .cardpan {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 1rem, 
+  margin-left: auto;
+  margin-right: auto;
+  
   
 }
 .cardimage {
   width: 30rem/* 80px */;
   margin-left: auto;
     margin-right: auto;
-    margin-top: -3rem/* -48px */;
+    margin-top: 3rem/* -48px */;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  
+   
 }
+
 .cardtext{font-size: 1.5rem/* 24px */;
   line-height: 2rem/* 32px */;
   font-weight: 700;
@@ -877,7 +888,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(72 61 61);
   grid-template-columns: repeat(1, 1fr);
 }
-@media (min-width: 768px) {
+
+
+@media (min-width: 200px)
+{
+ .div2 {
+   max-width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   gap: 2rem;
+   grid-template-columns: (3, 2fr, 2fr);
+   
+ }
+} 
+
+@media (min-width: 280px)
+{
+ .div2 {
+   /* max-width: 100%; */
+   margin-left: auto;
+   margin-right: auto;
+   gap: 2rem;
+   /* grid-template-columns: (3, 2fr, 2fr); */
+
+   
+ }
+}
+@media (min-width: 1200px) {
   .detaildiv2 {
   
     margin-left: auto;
@@ -886,4 +923,85 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
     grid-template-columns: repeat(1, minmax(2, 1fr));
   }
+}
+
+.meetushead {
+background-color: rgba(116,132,85);
+color: #fff;
+border-radius: 20px;
+padding:10px;
+text-align: center;
+margin-bottom: 30px;
+margin-top: -8rem;
+}
+
+
+.meetdiv1 {
+  width: 100%;
+    font-size: medium;
+    margin-top:2px;
+    padding-top: 10rem/* 160px */;
+    padding-bottom: 10rem/* 160px */;
+    padding-left: 1rem/* 16px */;
+    padding-right: 1rem/* 16px */;
+    --tw-bg-opacity: 1;
+    background-color: rgb(72 61 61);
+    box-shadow: var(--tw-backdrop-grayscale);
+    
+    
+}
+
+.meetdiv2 {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: (4fr);
+  background-color:  white;
+  border-radius: 20px;
+}
+
+
+.meet1 {
+  
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem,
+}
+
+.meet3{
+  margin-top: 1rem; 
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
+  object-fit:cover;
+    
+}
+
+.meetimg {
+  width: 30rem/* 80px */;
+  margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem/* -48px */;
+    border-radius: 20px;
+    flex-direction: column;
+    object-fit: fill;
+ 
+}
+
+
+.names {
+
+  color: rgb(74, 61, 61);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.quantity {
+  color:  rgb(48, 40, 40);
 }
