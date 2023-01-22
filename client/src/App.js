@@ -19,6 +19,7 @@ import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Header from "./components/Header/Header";
 import Meetheteam from './components/Pankcakes/Pancakes';
+import Pancakes from './components/Pankcakes/Pancakes';
 
 
 // import 'mdb-react-ui-kit/dist/css/mdb.min.css';
@@ -83,6 +84,10 @@ function App() {
               <Route 
                 path="/products/:id" 
                 element={<Detail />} 
+              />
+              <Route 
+                path="/pancakes/" 
+                element={<Pancakes />} 
               />
               <Route
                 path="*" 
