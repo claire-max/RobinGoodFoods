@@ -150,7 +150,7 @@ h9 {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: rgba(116, 132, 85);
+  background-color: rgb(72, 61, 61);
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -158,6 +158,10 @@ h9 {
 .submitsignbtn {
   border-radius: 30px;
   padding: 1rem;
+  color: white;
+  
+}
+.signuptextcolor {
   color: white;
 }
 

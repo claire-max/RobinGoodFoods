@@ -45,7 +45,7 @@ function Signup(props) {
        <h10>Signup</h10>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row text-white space-between my-2">
-          <label htmlFor="firstName">First Name:</label>
+          <label class="signuptextcolor" htmlFor="firstName">First Name:</label>
           <input style={{height: "40px"}}
             placeholder="First"
             name="firstName"
@@ -55,7 +55,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row text-white space-between my-2">
-          <label htmlFor="lastName">Last Name:</label>
+          <label class="signuptextcolor" htmlFor="lastName">Last Name:</label>
           <input style={{height: "40px"}}
             placeholder="Last"
             name="lastName"
@@ -65,7 +65,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row text-white space-between my-2">
-          <label htmlFor="email">Email:</label>
+          <label class="signuptextcolor" htmlFor="email">Email:</label>
           <input className="text-dark" style={{height: "40px"}}
             placeholder="youremail@test.com"
             name="email"
@@ -75,7 +75,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row text-white space-between my-2">
-          <label htmlFor="pwd">Password:</label>
+          <label class="signuptextcolor" htmlFor="pwd">Password:</label>
           <input style={{height: "40px"}}
             placeholder="******"
             name="password"
@@ -85,7 +85,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-          <button className="submitsignbtn" style={{backgroundColor:'rgb(72, 61, 61)'}} type="submit">Submit</button>
+          <button className="submitsignbtn" style={{backgroundColor:'rgba(116,132,85)'}} type="submit">Submit</button>
         </div>
         <br></br>
       </form>
