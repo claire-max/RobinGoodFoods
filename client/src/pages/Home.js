@@ -7,13 +7,14 @@ import Carousel from  "../components/carousel/Carousel";
 import Video from "../components/Video/vid";
 import Hero from "../components/Hero/herobanner";
 import Category from "../components/CategoryMenu";
-
+import Pancakes from "../components/Pankcakes/Pancakes"
 
 
 const Home = () => {
   return (  
     
-       <>        
+       <> 
+          
         <div class = "justify-content-right">  
         <Carousel/>
         </div> 

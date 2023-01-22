@@ -52,36 +52,22 @@ export default function Header() {
                 <a href="/login">Login</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Pancakes</a>
+                <a href="/pancakes">Pankcakes</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/signup">Baked Goods</a>
+                <a href="/bakedgoods">Baked Goods</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Coffee & Tea </a>
+                <a href="/coffeetea">Coffee & Tea </a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Merchandise</a>
-              </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/meetus">Meet the Team</a>
+                <a href="/merch">Merch</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-    
+     
       </nav>
       <style>{`
       .hideMenuNav {

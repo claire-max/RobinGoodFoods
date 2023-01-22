@@ -414,9 +414,12 @@ object {
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
-img,
-video {
+img{
   max-width: 100%;
+  height: auto;
+}
+video {
+  min-width: 100%;
   height: auto;
 }
 

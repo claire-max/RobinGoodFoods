@@ -1,4 +1,7 @@
-/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
@@ -757,6 +760,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .heroban {
   font-size:x-large;
+}
+
+.w-full {
+  width: 50%;
+  text-shadow: var(--tw-backdrop-grayscale);
+
   
 }
 .containerhero {

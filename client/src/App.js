@@ -18,6 +18,12 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Header from "./components/Header/Header";
+
+import Pancakes from './components/Pankcakes/Pancakes';
+
+
+// import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 import Meetus from "./pages/Meetus";
 
 
@@ -81,6 +87,10 @@ function App() {
                 path="/products/:id" 
                 element={<Detail />} 
               />
+              <Route 
+                path="/pancakes/" 
+                element={<Pancakes />}
+                /> 
                <Route 
                 path="/meetus" 
                 element={<Meetus />} 
