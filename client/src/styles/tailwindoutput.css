@@ -671,7 +671,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
     --tw-space-x-reverse: 0;
       margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-      margin-left: calc(25.5rem * calc(1 - var(--tw-space-x-reverse)));
+      margin-left: calc(40.5rem * calc(1 - var(--tw-space-x-reverse)));
     width: 30%;
 }
 }
@@ -893,3 +893,8 @@ margin: 3px;
 } */
 
 
+.allProductItem{
+  width: 25%;
+  height: fit-content;
+  text-align: center;
+}
