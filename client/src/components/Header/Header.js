@@ -14,7 +14,9 @@ export default function Header() {
     <Link to="/">
        <img class="logo" src={Logo}/>
      </Link> 
-   </div> 
+   </div>
+    
+  
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
@@ -52,7 +54,7 @@ export default function Header() {
                 <a href="/login">Login</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/pancakes">Pankcakes</a>
+                <a href="/pancakes">Pancakes</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/bakedgoods">Baked Goods</a>
@@ -62,6 +64,9 @@ export default function Header() {
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/merch">Merch</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/meetus">Meet the Team</a>
               </li>
             </ul>
           </div>
