@@ -18,12 +18,14 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Header from "./components/Header/Header";
-import Meetheteam from './components/Pankcakes/Pancakes';
+
 import Pancakes from './components/Pankcakes/Pancakes';
 
 
 // import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 // import "@fortawesome/fontawesome-free/css/all.min.css";
+import Meetus from "./pages/Meetus";
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -87,7 +89,11 @@ function App() {
               />
               <Route 
                 path="/pancakes/" 
-                element={<Pancakes />} 
+                element={<Pancakes />}
+                /> 
+               <Route 
+                path="/meetus" 
+                element={<Meetus />} 
               />
               <Route
                 path="*" 

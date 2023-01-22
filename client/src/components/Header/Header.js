@@ -12,7 +12,7 @@ export default function Header() {
       <nav>
       <div className="logobogo items-center lg">
     <Link to="/">
-       <img src={Logo}/>
+       <img class="logo" src={Logo}/>
      </Link> 
    </div> 
         <section className="MOBILE-MENU flex lg:hidden">

@@ -412,7 +412,7 @@ db.once('open', async () => {
       name: 'Black Hat',
       description:
         'Complete your look with this fitted Baseball Cap, your perfect wardrobe-essential accessory',
-      image: 'backofblack.png',
+      image: 'blackhat.png',
       category: categories[8]._id,
       price: 29.99,
       quantity: 1
@@ -421,7 +421,7 @@ db.once('open', async () => {
       name: 'White Hat',
       description:
         'Keeps you warm or cool, hypoallergenic, washable, packable, shapeable, water repellent or water resistant, lightweight.',
-      image: 'backofwhitehat.png',
+      image: 'whitehat.png',
       category: categories[8]._id,
       price: 29.99,
       quantity: 1
@@ -430,7 +430,7 @@ db.once('open', async () => {
       name: 'White long sleeve tshirt',
       description:
         'Made of cotton textile in a stockinette or jersey knit, which has a distinctively pliable texture compared to shirts made of woven cloth.',
-      image: 'backofwhitelongsleeve.png',
+      image: 'whitelongsleeve.png',
       category: categories[8]._id,
       price: 19.99,
       quantity: 1
@@ -439,7 +439,7 @@ db.once('open', async () => {
       name: 'White mug',
       description:
         'Cylindrical cool white mug for drinking tea or coffee',
-      image: 'backofwhitemug.png',
+      image: 'whitemug.png',
       category: categories[8]._id,
       price: 9.99,
       quantity: 1

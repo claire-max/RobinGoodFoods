@@ -13,6 +13,7 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
+import Footer from '../components/Footer';
 
 // temporary imports
 
@@ -112,6 +113,7 @@ function Detail() {
       {loading ? <img src={spinner} alt="loading" /> : null}
       
       <Cart />
+      <Footer/>
     </>
   );
 }

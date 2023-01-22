@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
+import Footer from "../components/Footer";
+import "../App.css";
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -87,7 +89,9 @@ function Signup(props) {
         </div>
         <br></br>
       </form>
+    
     </div>
+    <Footer/>
     </div>
     
   );
