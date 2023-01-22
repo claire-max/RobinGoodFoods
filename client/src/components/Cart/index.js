@@ -8,7 +8,7 @@ import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-
+import {BsCart2 } from 'react-icons/bs';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
@@ -62,9 +62,9 @@ const Cart = () => {
 
   if (!state.cartOpen) {
     return (
-      <div className="cart-closed" onClick={toggleCart}>
+      <div className="cart-closed text-white" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-          🛒
+       <a className='white'> <BsCart2/></a>
         </span>
       </div>
     );
@@ -75,9 +75,9 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
-      <h2>Shopping Cart</h2>
+      <h2 className='shopdiv'>Shopping Cart</h2>
       {state.cart.length ? (
-        <div>
+        <div className='shopinherit'>
           {state.cart.map((item) => (
             <CartItem key={item._id} item={item} />
           ))}
