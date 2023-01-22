@@ -86,15 +86,7 @@ db.once('open', async () => {
       price: 36.00,
       quantity: 10
     },
-    {
-      name: 'Blueberry',
-      description:
-        'Savory and Sweet. Soft and flavorful, they can be enjoyed on their own or topped with your favorite spreads or as the perfect complement to most any meal.',
-      image: 'blueberry.png',
-      category: categories[1]._id,
-      price: 36.00,
-      quantity: 10
-    },
+    
     {
       name: 'Chocolate',
       description:
@@ -114,7 +106,7 @@ db.once('open', async () => {
       quantity: 10
     },
 
-    //Jam
+    /*Jam*/
     {
       name: 'Blackberry',
       description:
