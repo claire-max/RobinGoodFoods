@@ -20,13 +20,22 @@
 Calling all breakfast lovers! We know breakfast is the most important meal of the day and often times skipped.  All of our products are made with Whole Ingredients, Organic and Non-GMO. Enjoy the good at RobinGood Foods.
 
   ## Installation
-
+- Tailwind
+- npx create-react-app
+- Main package.json
+ * npm i apollo-server-express
+ * npm i express
+ * npm i graphql
+- Server package.json
+ * npm i graphql apollo-server-express
+- Client package.json
+ * npm i graphql @apollo/client
 
   ## Walk Through
-[Walk Through](https://drive.google.com/file/d/1SXbhFMWqTGeBYvFLmwWgN-lM-iHJ45GT/view)
+[Walk Through](https://drive.google.com/file/d/13-cygBEPQmMzfsVeKJIJSBN55kEQxGAE/view)
 
   ## Usage
-
+Disrupting the e-commerce breakfast game with plant-based, Organic and Non-GMO's foods. 
 ![Alt Text](client/src/images/Readmepage/readme.png)
   ## Presentation Link
 [RobinGood Foods Presentation](https://docs.google.com/presentation/d/1YhERuZA8pJLMTRrxr1xVVFPwtm9rubfav2kxhWUqnsQ/edit#slide=id.g29f43f0a72_0_15)
