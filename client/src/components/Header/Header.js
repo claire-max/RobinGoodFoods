@@ -48,25 +48,25 @@ export default function Header() {
     
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/signup">Sign Up</a>
+                <Link to ="/signup">Sign Up</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/login">Login</a>
+                <Link to ="/login">Login</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/pancakes">Pancakes</a>
+                <Link to ="/pancakes">Pancakes</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/bakedgoods">Baked Goods</a>
+                <Link to ="/bakedgoods">Baked Goods</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/coffeetea">Coffee & Tea </a>
+                <Link to ="/coffeetea">Coffee & Tea </ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/merch">Merch</a>
+                <Link to ="/merch">Merch</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/meetus">Meet the Team</a>
+                <Link to ="/meetus">Meet the Team</ Link>
               </li>
             </ul>
           </div>
