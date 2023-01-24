@@ -9,10 +9,10 @@ export default function Header() {
   return (
       <div id="header" className="flex items-center justify-between border-b border-gray-400 py-8">
    
-      <nav>
+      <nav >
       <div className="logobogo items-center lg">
-    <Link to="/">
-       <img class="logo" src={Logo}/>
+    <Link to="/" >
+       <img class="logo"  src={Logo} alt=''/>
      </Link> 
    </div>
     
@@ -48,25 +48,26 @@ export default function Header() {
     
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/signup">Sign Up</ Link>
+                <Link to ="/signup" onClick={() => setIsNavOpen(false)}>Sign Up</ Link>
+                 
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/login">Login</ Link>
+                <Link to ="/login" onClick={() => setIsNavOpen(false)}>Login</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/pancakes">Pancakes</ Link>
+                <Link to ="/pancakes" onClick={() => setIsNavOpen(false)}>Pancakes</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/bakedgoods">Baked Goods</ Link>
+                <Link to ="/bakedgoods" onClick={() => setIsNavOpen(false)}>Baked Goods</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/coffeetea">Coffee & Tea </ Link>
+                <Link to ="/coffeetea"onClick={() => setIsNavOpen(false)} >Coffee & Tea </ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/merch">Merch</ Link>
+                <Link to ="/merch" onClick={() => setIsNavOpen(false)}>Merch</ Link>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <Link to ="/meetus">Meet the Team</ Link>
+                <Link to ="/meetus" onClick={() => setIsNavOpen(false)}>Meet the Team</ Link>
               </li>
             </ul>
           </div>
